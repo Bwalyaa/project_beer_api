@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const BeerDetails = () => {
 
@@ -22,8 +23,15 @@ const BeerDetails = () => {
 
     return ( 
         <>
+        <div className="detailImg">{beers.image_url}</div>
 
+        <div className="bierDetailsTexte">
         <h1>{beers.name}</h1>
+        <h2>{beers.tagline}</h2>
+        <p>{beers.description}</p>
+        <h4>{beers.contributed_by}</h4>
+        </div>
+        <div className="emoji"><Link to={"/beerlist"}><button>🔙</button></Link></div>
         
         </>
      );

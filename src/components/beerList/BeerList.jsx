@@ -24,15 +24,21 @@ const BeerList = () => {
         <Nav />
         {beers.map((beer, index)=>{
             return (
-                <div key={index}>
+                
+                <div className="bierListe" key={index}>
+                    
                     <BeerCard 
+                    id={beer._id}
                     img={beer.image_url}
                     slogan={beer.tagline}
                     producer={beer.contributed_by}
                     name={beer.name}
                     />
                 </div>
+
+                
             )
+            
         })}
 
         </>
