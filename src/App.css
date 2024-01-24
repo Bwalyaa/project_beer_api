@@ -1,3 +1,17 @@
+@media screen and (max-width: 768px) {
+  .homePage, .homePage, .bierListe, .bierTexte, .bierDetailsTexte {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .homePage, .bierListe, .bierTexte, .bierDetailsTexte {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
 body {
   background-color: white;
   color: black;
