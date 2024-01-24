@@ -10,6 +10,7 @@ const BeerDetails = () => {
     const [beers, setBeers] = useState([])
 
     const apiLink = `https://ih-beers-api2.herokuapp.com/beers/${idParam.id}`
+   
 
     useEffect(()=>{
         const FetchApi = async () => {
@@ -23,7 +24,7 @@ const BeerDetails = () => {
 
     return ( 
         <>
-        <div className="detailImg">{beers.image_url}</div>
+        <div className="detailImg"><img src={beers.image_url} /></div>
 
         <div className="bierDetailsTexte">
         <h1>{beers.name}</h1>

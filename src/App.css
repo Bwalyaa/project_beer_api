@@ -1,42 +1,30 @@
-@media screen and (max-width: 768px) {
-  .homePage, .homePage, .bierListe, .bierTexte, .bierDetailsTexte {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .homePage, .bierListe, .bierTexte, .bierDetailsTexte {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-}
 
 body {
   background-color: white;
   color: black;
 }
 
+
 .homePage {
- display: flex;
- flex-direction: column;
- margin-left: 15rem;
- margin-top: 30px;
-}
-
-
-.homePage img {
   display: flex;
-  width: 100%;
-}
-
-.homePage button {
-  background-color: orange;
-  width: 58rem;
-  height: 70px;
-  font-size: 30px;
-  cursor: pointer;
-}
+  flex-direction: column;
+  margin-left: 15rem;
+  margin-top: 30px;
+ }
+ 
+ 
+ .homePage img {
+   display: flex;
+   width: 100%;
+ }
+ 
+ .homePage button {
+   background-color: orange;
+   width: 100%;
+   height: 70px;
+   font-size: 30px;
+   cursor: pointer;
+ }
 
 .bierListe img {
   width: 6rem;
@@ -52,6 +40,8 @@ body {
 .bierListe hr {
   border: 2px solid red;
 }
+
+
 
 .bierTexte button {
   background-color: orange;
@@ -83,6 +73,27 @@ body {
   justify-content: center;
 }
 
+.detailImg img {
+  height: 16rem;
+  width: 70px;
+}
+
+.listEmoji {
+  background-color: orange;
+  width: 90rem;
+  
+}
+
+.listEmoji button {
+  background-color: orange;
+  width: 100%;
+  font-size: 40px;
+  height: 90px;
+  position: fixed;
+  bottom: 0;
+  
+}
+
 .emoji button{
   background-color: orange;
   width: 100%;
@@ -90,5 +101,46 @@ body {
   font-size: 30px;
   cursor: pointer;
   font-size: 40px;
-  background-color: orange;
+  position: fixed;
+  bottom: 0;
+  
+}
+
+.emoji {
+  margin-bottom: 40px;
+}
+
+
+.randomFirstBrewed {
+  display: flex;
+  justify-content: space-between;
+}
+
+.randomAttenuationLevel {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.randomTagline {
+  font-size: 25px;
+  color: orange;
+}
+
+.randomName {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.randomImg {
+  display: flex;
+  justify-content: center;
+}
+
+.randomSection {
+  padding: 30px;
 }

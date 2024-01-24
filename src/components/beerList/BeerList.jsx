@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Nav from "../nav/Nav";
 import BeerCard from "../beerCard/BeerCard";
+import { Link } from "react-router-dom";
 
 const BeerList = () => {
 
@@ -21,7 +21,7 @@ const BeerList = () => {
     return ( 
         <>
         
-        <Nav />
+        
         {beers.map((beer, index)=>{
             return (
                 
@@ -35,12 +35,13 @@ const BeerList = () => {
                     name={beer.name}
                     />
                 </div>
+                
 
                 
             )
             
         })}
-
+   <div className="listEmoji"><Link to={"/"}><button>🔙</button></Link></div>
         </>
      );
 }
